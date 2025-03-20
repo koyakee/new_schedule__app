@@ -6,7 +6,7 @@
     <p class="notice"><%= flash[:notice] %></p>
 <% end %>
 
-<table>
+<table id="scheduleTable">
     <thead>
         <tr>
             <th>ID</th>
@@ -45,6 +45,6 @@
 </table>
 
 <footer>
-    <p>予定合計</p>
-    <p>本日の日付</p>
+    <p>予定合計 <span id="scheduleCount"></span>件</p>
+    <p>本日の日付 <span id="today"></span></p>
 </footer>
