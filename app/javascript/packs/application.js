@@ -22,11 +22,11 @@ function showCurrentDate() {
     const textElement = document.getElementById("today");
     textElement.textContent = currentDate;
 }
-document.addEventListener("DOMContentLoaded", showCurrentDate);
+document.addEventListener("turbolinks:load", showCurrentDate);
 
 function getNumberOfSchedule() {
-    const rowCount = scheduleTable.rows.length;
+    const rowCount = scheduleTable.rows.length - 1;
     const countElement = document.getElementById("scheduleCount");
     countElement.textContent = rowCount;
 }
-document.addEventListener("DOMContentLoaded", getNumberOfSchedule);
+document.addEventListener("turbolinks:load", getNumberOfSchedule);

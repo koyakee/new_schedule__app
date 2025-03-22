@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #000d4c;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: 0;
+}
+.title {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table th {
+    background-color: aqua;
+    padding: 10px 20px;
+}
+
+table td {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.notice { 
+    color: red;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
