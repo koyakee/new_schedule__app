@@ -8,6 +8,25 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+function showCurrentDate() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const currentDate = `${year}/${month}/${day}`;
+    const textElement = document.getElementById("today");
+    textElement.textContent = currentDate;
+}
+document.addEventListener("turbolinks:load", showCurrentDate);
+
+function getNumberOfSchedule() {
+    const rowCount = scheduleTable.rows.length - 1;
+    const countElement = document.getElementById("scheduleCount");
+    countElement.textContent = rowCount;
+}
+document.addEventListener("turbolinks:load", getNumberOfSchedule);

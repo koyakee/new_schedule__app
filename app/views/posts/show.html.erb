@@ -1,0 +1,29 @@
+<div class=container>
+    <div>
+        <ul>
+            <li><%= link_to "←一覧に戻る", :posts %></li>
+            <li><%= link_to "編集", edit_post_path(@post) %></li>
+        </ul>
+    </div>
+
+    <h3><%= @post.title %></h3>
+
+    <table>
+        <tr>
+            <th>開始日</th>
+            <td><%= @post.startDate.strftime("%Y/%m/%d") %></td>
+        </tr>
+        <tr>
+            <th>終了日</th>
+            <td><%= @post.endDate.strftime("%Y/%m/%d") %></td>
+        </tr>
+        <tr>
+            <th>終日</th>
+            <td><%= @post.allDay ? "⚪︎" : "" %></td>
+        </tr>
+        <tr>
+            <th>スケジュールメモ</th>
+            <td><%= @post.scheduleMemo %></td>
+        </tr>
+    </table>
+</div>
